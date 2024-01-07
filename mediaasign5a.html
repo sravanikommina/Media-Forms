@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+   <style>
+    form{
+        height: 500px;
+        width: 350px;
+        background-color: rgba(237, 236, 233, 0.907);
+        border-radius: 2px;
+       
+    }
+    label{
+        padding: 10px;
+    }
+    input,button{
+        margin: 4px;
+    }
+    .div{
+        display: inline-block;
+    }
+   </style>
+</head>
+<body>
+   <h1>SignUp Here</h1> 
+   <form action="./Signup.js" method="post">
+    <label for="firstname">Firstname</label>
+    <input type="text" name="firstname" id="firstname" placeholder="firstname" min="3" max="15" required>
+
+    <label for="lastname">Lastname</label>
+    <input type="text" name="lastname" id="lastname" placeholder="lastname" min="3" max="15" required><br>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="emailname@gmail.com" required><br>
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" placeholder="*************" required><br>
+
+    <label for="Confrim">Confrim password</label>
+    <input type="password" name="password" id="Confrim" placeholder="*************" required>
+
+    <br>
+
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" required min="0" max="150" placeholder="ex:25">
+    <br>
+
+    <label for="">Gender:</label>   
+    <br>
+    <input type="radio" name="gender" id="femalegender">
+    <label for="femalegender">Female</label>
+
+    <input type="radio" name="gender" id="malegender">
+    <label for="malegender">Male</label>
+
+    <input type="radio" name="gender" id="othergender">
+    <label for="othergender">Other</label>
+
+    <br>
+    <input type="checkbox" name="consent" id="" required>Here by I agree to all the terms and conditions mentioned here.
+   
+    <br>
+    <button type="submit">submit
+
+    </button>
+   </form>
+</body>
+</html>
